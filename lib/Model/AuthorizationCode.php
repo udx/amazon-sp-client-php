@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  AmazonSP
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace AmazonSP\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \AmazonSP\ObjectSerializer;
 
 /**
  * AuthorizationCode Class Doc Comment
  *
  * @category Class
  * @description A Login with Amazon (LWA) authorization code.
- * @package  Swagger\Client
+ * @package  AmazonSP
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */

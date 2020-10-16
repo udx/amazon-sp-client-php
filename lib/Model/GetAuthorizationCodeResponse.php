@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  AmazonSP
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace AmazonSP\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \AmazonSP\ObjectSerializer;
 
 /**
  * GetAuthorizationCodeResponse Class Doc Comment
  *
  * @category Class
  * @description The response schema for the GetAuthorizationCode operation.
- * @package  Swagger\Client
+ * @package  AmazonSP
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,8 +57,8 @@ class GetAuthorizationCodeResponse implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'payload' => '\Swagger\Client\Model\AuthorizationCode',
-'errors' => '\Swagger\Client\Model\ErrorList'    ];
+        'payload' => '\AmazonSP\Model\AuthorizationCode',
+'errors' => '\AmazonSP\Model\ErrorList'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -206,7 +206,7 @@ class GetAuthorizationCodeResponse implements ModelInterface, ArrayAccess
     /**
      * Gets payload
      *
-     * @return \Swagger\Client\Model\AuthorizationCode
+     * @return \AmazonSP\Model\AuthorizationCode
      */
     public function getPayload()
     {
@@ -216,7 +216,7 @@ class GetAuthorizationCodeResponse implements ModelInterface, ArrayAccess
     /**
      * Sets payload
      *
-     * @param \Swagger\Client\Model\AuthorizationCode $payload payload
+     * @param \AmazonSP\Model\AuthorizationCode $payload payload
      *
      * @return $this
      */
@@ -230,7 +230,7 @@ class GetAuthorizationCodeResponse implements ModelInterface, ArrayAccess
     /**
      * Gets errors
      *
-     * @return \Swagger\Client\Model\ErrorList
+     * @return \AmazonSP\Model\ErrorList
      */
     public function getErrors()
     {
@@ -240,7 +240,7 @@ class GetAuthorizationCodeResponse implements ModelInterface, ArrayAccess
     /**
      * Sets errors
      *
-     * @param \Swagger\Client\Model\ErrorList $errors errors
+     * @param \AmazonSP\Model\ErrorList $errors errors
      *
      * @return $this
      */

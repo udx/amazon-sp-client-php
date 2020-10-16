@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  AmazonSP
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace AmazonSP\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use AmazonSP\ApiException;
+use AmazonSP\Configuration;
+use AmazonSP\HeaderSelector;
+use AmazonSP\ObjectSerializer;
 
 /**
  * AuthorizationApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  AmazonSP
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -95,9 +95,9 @@ class AuthorizationApi
      * @param  string $developer_id Your developer ID. This must be one of the developer ID values that you provided when you registered your application in Developer Central. (required)
      * @param  string $mws_auth_token The MWS Auth Token that was generated when the seller authorized your application on the Marketplace Appstore. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \AmazonSP\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetAuthorizationCodeResponse
+     * @return \AmazonSP\Model\GetAuthorizationCodeResponse
      */
     public function getAuthorizationCode($selling_partner_id, $developer_id, $mws_auth_token)
     {
@@ -114,13 +114,13 @@ class AuthorizationApi
      * @param  string $developer_id Your developer ID. This must be one of the developer ID values that you provided when you registered your application in Developer Central. (required)
      * @param  string $mws_auth_token The MWS Auth Token that was generated when the seller authorized your application on the Marketplace Appstore. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \AmazonSP\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetAuthorizationCodeResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \AmazonSP\Model\GetAuthorizationCodeResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getAuthorizationCodeWithHttpInfo($selling_partner_id, $developer_id, $mws_auth_token)
     {
-        $returnType = '\Swagger\Client\Model\GetAuthorizationCodeResponse';
+        $returnType = '\AmazonSP\Model\GetAuthorizationCodeResponse';
         $request = $this->getAuthorizationCodeRequest($selling_partner_id, $developer_id, $mws_auth_token);
 
         try {
@@ -172,7 +172,7 @@ class AuthorizationApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetAuthorizationCodeResponse',
+                        '\AmazonSP\Model\GetAuthorizationCodeResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -180,7 +180,7 @@ class AuthorizationApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetAuthorizationCodeResponse',
+                        '\AmazonSP\Model\GetAuthorizationCodeResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -188,7 +188,7 @@ class AuthorizationApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetAuthorizationCodeResponse',
+                        '\AmazonSP\Model\GetAuthorizationCodeResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -196,7 +196,7 @@ class AuthorizationApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetAuthorizationCodeResponse',
+                        '\AmazonSP\Model\GetAuthorizationCodeResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -204,7 +204,7 @@ class AuthorizationApi
                 case 413:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetAuthorizationCodeResponse',
+                        '\AmazonSP\Model\GetAuthorizationCodeResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -212,7 +212,7 @@ class AuthorizationApi
                 case 415:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetAuthorizationCodeResponse',
+                        '\AmazonSP\Model\GetAuthorizationCodeResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -220,7 +220,7 @@ class AuthorizationApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetAuthorizationCodeResponse',
+                        '\AmazonSP\Model\GetAuthorizationCodeResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -228,7 +228,7 @@ class AuthorizationApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetAuthorizationCodeResponse',
+                        '\AmazonSP\Model\GetAuthorizationCodeResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -236,7 +236,7 @@ class AuthorizationApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetAuthorizationCodeResponse',
+                        '\AmazonSP\Model\GetAuthorizationCodeResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -282,7 +282,7 @@ class AuthorizationApi
      */
     public function getAuthorizationCodeAsyncWithHttpInfo($selling_partner_id, $developer_id, $mws_auth_token)
     {
-        $returnType = '\Swagger\Client\Model\GetAuthorizationCodeResponse';
+        $returnType = '\AmazonSP\Model\GetAuthorizationCodeResponse';
         $request = $this->getAuthorizationCodeRequest($selling_partner_id, $developer_id, $mws_auth_token);
 
         return $this->client

@@ -1,5 +1,6 @@
 {
   "gitUserId": "udx",
   "gitRepoId": "amazon-sp-client-php",
-  "packagePath": "."
+  "packagePath": ".",
+  "invokerPackage": "AmazonSP"
 }

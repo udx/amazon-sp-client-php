@@ -1,4 +1,4 @@
-# Swagger\Client\AuthorizationApi
+# AmazonSP\AuthorizationApi
 
 All URIs are relative to *https://sellingpartnerapi-na.amazon.com/*
 
@@ -7,7 +7,7 @@ Method | HTTP request | Description
 [**getAuthorizationCode**](AuthorizationApi.md#getauthorizationcode) | **GET** /authorization/v1/authorizationCode | Returns the Login with Amazon (LWA) authorization code for an existing Amazon MWS authorization.
 
 # **getAuthorizationCode**
-> \Swagger\Client\Model\GetAuthorizationCodeResponse getAuthorizationCode($selling_partner_id, $developer_id, $mws_auth_token)
+> \AmazonSP\Model\GetAuthorizationCodeResponse getAuthorizationCode($selling_partner_id, $developer_id, $mws_auth_token)
 
 Returns the Login with Amazon (LWA) authorization code for an existing Amazon MWS authorization.
 
@@ -18,7 +18,7 @@ With the getAuthorizationCode operation, you can request a Login With Amazon (LW
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\AuthorizationApi(
+$apiInstance = new AmazonSP\Api\AuthorizationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -46,7 +46,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\GetAuthorizationCodeResponse**](../Model/GetAuthorizationCodeResponse.md)
+[**\AmazonSP\Model\GetAuthorizationCodeResponse**](../Model/GetAuthorizationCodeResponse.md)
 
 ### Authorization
 
