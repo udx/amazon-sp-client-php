@@ -44,3 +44,7 @@ composer install
 ```
 
 ## [Documentation](docs)
+
+## OpenAPI
+
+> swagger-codegen generate -i https://raw.githubusercontent.com/amzn/selling-partner-api-models/main/models/{model}.json -l php -o . -c ./config.json
